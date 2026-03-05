@@ -16,7 +16,7 @@ for genomeP in ${indir}/*; do
     mkdir -p ${outdir}/${genes}
     gmes_petap.pl --ES --cores 10 \
 	    --min_contig 9000 \
-	    --sequence "$genesP" \
+	    --sequence "$genomeP" \
 	    --work_dir "${outdir}/${genes}/" \
 	    > "${outdir}/${genes}/gmes_petap.log" 2>&1
     

@@ -6,7 +6,7 @@ blast_dir="results/malaria-proj/2_gene-prediction/2-3_blast"
 fasta_dir="results/malaria-proj/2_gene-prediction/2-2_gene-parsing"
 ncbi_taxon_db="results/malaria-proj/0_dbs/taxonomy.dat"
 uniprot_db="results/malaria-proj/0_dbs/uniprot_sprot.dat"
-taxon_of_interest="birds"
+taxon_of_interest="Aves"
 
 #Looping over the BLAST files to parse them using the parseBlast_hostContigs.py script.
 for blast_fileP in ${blast_dir}/*.blast*; do
@@ -19,5 +19,5 @@ for blast_fileP in ${blast_dir}/*.blast*; do
         "$blast_fileP" \
         "$ncbi_taxon_db" "$uniprot_db" \
         "$taxon_of_interest" \
-        > "${blast_dir}/${prefix}.hostContigs.txt"
+        > "${blast_dir}/${prefix}.hostContigs"
 done
