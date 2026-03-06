@@ -1,0 +1,9 @@
+sample	file	type	pre_clean_max_gc	pre_clean_min_scaffL	GM_min_contigL
+Haemoproteus_tartakovskyi	Haemoproteus_tartakovskyi.raw.genome	raw	35	3000	10000
+Plasmodium_berghei	Plasmodium_berghei.genome	clean	NA	NA	50000
+Plasmodium_cynomolgi	Plasmodium_cynomolgi.genome	clean	NA	NA	50000
+Plasmodium_falciparum	Plasmodium_falciparum.genome	clean	NA	NA	50000
+Plasmodium_knowlesi	Plasmodium_knowlesi.genome	clean	NA	NA	50000
+Plasmodium_vivax	Plasmodium_vivax.genome	clean	NA	NA	50000
+Plasmodium_yoelii	Plasmodium_yoelii.genome	clean	NA	NA	50000
+Toxoplasma_gondii	Plasmodium_gondii.genome	clean	NA	NA	50000

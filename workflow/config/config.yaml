@@ -1,0 +1,15 @@
+samples:
+  genomeA:
+    file: data/genomeA.fasta
+    type: parasite
+    param1: 0.7
+    param2: yes
+  genomeB:
+    file: data/genomeB.fasta
+    type: host
+    param1: 0.3
+  genomeC:
+    file: data/genomeC.fasta
+    type: parasite
+    param1: 0.5
+    param3: strict

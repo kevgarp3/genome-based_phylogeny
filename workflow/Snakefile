@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+rule create_project_tree:
+    input:
+        directory("results/{project}")
+    output:
+        directory("results/{project}/0_data"),
+        directory("results/{project}/0_data/0-1_genomes"),
+        directory("results/{project}/0_data/0-2_databases"),
+        directory("results/{project}/1_clean-genomes"),
+        directory("results/{project}/1_clean-genomes/1-1_pre-cleaning-genomes"),
+        directory("results/{project}/1_clean-genomes/1-2_gene-prediction"),
+        directory("results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-1_GeneMark"),
+        directory("results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-2_gene-parsing"),
+        directory("results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-3_host-contigs-detection"),
+        directory("results/{project}/1_clean-genomes/1-3_final-clean-genomes"),
+        directory("results/{project}/2_gene-prediction"),
+        directory("results/{project}/2_gene-prediction/2-1_GeneMark"),
+        directory("results/{project}/2_gene-prediction/2-2_gene-parsing"),
+        directory("results/{project}/3_ortholog-identification"),
+        directory("results/{project}/3_ortholog-identification/3-1_proteinortho"),
+        directory("results/{project}/3_ortholog-identification/3-2_busco"),
+        directory("results/{project}/4_alignment"),
+        directory("results/{project}/5_phylogeny-tree")
+    shell:
+        """
+        mkdir -p \
+        results/{project}/0_data/0-1_genomes \
+        results/{project}/0_data/0-2_databases \
+        results/{project}/1_clean-genomes/1-1_pre-cleaning-genomes \
+        results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-1_GeneMark \
+        results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-2_gene-parsing \
+        results/{project}/1_clean-genomes/1-2_gene-prediction/1-2-3_host-contigs-detection \
+        results/{project}/1_clean-genomes/1-3_final-clean-genomes \
+        results/{project}/2_gene-prediction/2-1_GeneMark \
+        results/{project}/2_gene-prediction/2-2_gene-parsing \
+        results/{project}/3_ortholog-identification/3-1_proteinortho \
+        results/{project}/3_ortholog-identification/3-2_busco \
+        results/{project}/4_alignment \
+        results/{project}/5_phylogeny-tree
+        """
