@@ -4,19 +4,9 @@ This workflow enables building genome-based phylogeny trees using multiple unann
 
 To achieve this the following steps are performed:
 
-1. Cleaning genomes (contamination removal)
-    1.1 Pre-cleaning of genomes
-    1.2 Gene-prediction of pre-cleaned genomes
-        1.2.1 Running GeneMark
-        1.2.2 Parsing GeneMark results to FASTA format
-        1.2.3 Detecting host contigs (via BLAST)
-    1.3 Final cleaning of genomes
-2. Gene prediction using clean genomes
-    2.1 GeneMark run
-    2.2 Parsing GeneMark results to FASTA format
-3. Orthologs identification
-    3.1 Using proteinortho
-    3.2 Using busco
+1. Cleaning genomes (contamination removal): pre-cleaning the necessary genomes, performing gene-prediction on the pre-cleaned genomes using GeneMark, parsing GeneMark's results to FASTA format, detecting the host contigs via BLAST, and finally cleaning the genomes.
+2. Gene prediction: running GeneMark with all (clean) genomes and parsing its results to FASTA format.
+3. Orthologs identification: using proteinortho and BUSCO.
 4. Orthologs alignment
 5. Building phylogeny trees
 
@@ -61,10 +51,10 @@ To achieve this the following steps are performed:
 
 ## Links to Download Data
 
-The databases used in this project can be downloaded by following the corresponding links:
+The databases used in this project can be downloaded by using `wget` with each of the following links:
 
-* [NCBI Taxonomy Database](ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat)
-* [SwissProt Database](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz)
+* NCBI Taxonomy Database: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
+* SwissProt Database: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz
 
 ## Software Dependencies
 
