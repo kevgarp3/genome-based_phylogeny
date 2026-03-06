@@ -62,6 +62,7 @@ To achieve this the following steps are performed:
 ## Links to Download Data
 
 The databases used in this project can be downloaded by following the corresponding links:
+
 * [NCBI Taxonomy Database](ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat)
 * [SwissProt Database](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz)
 
@@ -78,16 +79,18 @@ The following list presents all software dependencies (and versions) required to
 * phylip=3.69.7
 
 All the previous dependencies can be easily installed within a conda environment by running the following command:
-"""BASH
+
+```BASH
 conda env create -f workflow/envs/genome-based_phylogeny.yaml
 conda activate genome-based_phylogeny
-"""
+```
 
 (ONCE THE WORKFLOW IS IMPLEMENTED IN SNAKEMAKE!)
 Alternatively, the following command should trigger the pipeline:
-"""BASH
+
+```BASH
 snakemake -n --use-conda
-"""
+```
 
 ## Commands
 
