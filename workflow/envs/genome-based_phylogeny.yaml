@@ -1,4 +1,4 @@
-name: genome-phylogeny_env
+name: genome-based_phylogeny
 channels:
     - conda-forge
     - bioconda
@@ -7,3 +7,6 @@ dependencies:
     - blast=2.17.0
     - proteinortho=6.3.6
     - busco=6.0.0
+    - clustalo=1.2.4
+    - raxml=8.2.13
+    - phylip=3.69.7
